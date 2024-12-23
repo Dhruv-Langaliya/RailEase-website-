@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Tickets - RailEase</title>
+    <link rel="stylesheet" href="book_tickets.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="main">
+        <!-- -----------------------NAVBAR----------------------- -->
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo_final.png" alt="Logo">
+            </div>
+            <div class="mainlist">
+                <ul>
+                    <li><a href="index.html" class="list"><b>Home</b></a></li>
+                    <li><a href="#" class="list"><b>Book Tickets</b> <i class="fas fa-caret-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="search_trains.html">Search trains</a></li>
+                            <li><a href="book_tickets.html">Book tickets</a></li>
+                            <li><a href="#">View schedules</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="list"><b>About Us</b> <i class="fas fa-caret-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="https://site16144777.nicepage.io/">Company information</a></li>
+                            <li><a href="https://site21460775.nicepage.io/">Help</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="list"><b>Other Services</b> <i class="fas fa-caret-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="https://www.swiggy.com/">Order food</a></li>
+                            <li><a href="https://www.amazon.com/">Shopping</a></li>
+                            <li><a href="https://www.netflix.com/">Entertainment</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="login-signup">
+                <button class="btn" id="login-btn"><a href="login-page.html">Login</a></button>
+                <button class="btn" id="signup-btn"><a href="signup-page.html">Sign Up</a></button>
+            </div>
+        </nav>
+
+        <!-- -----------------------CONTENT SECTIONS----------------------- -->
+        <div class="content-wrapper">
+            <!-- ----------------------- Book Tickets Section----------------------- -->
+            <div class="book-tickets section">
+                <h1>Book Tickets</h1>
+                <div class="booking-box">
+                    <div class="booking-left">
+                        <p><b>Travel Details</b></p>
+                        <div class="from_to">
+                            <input type="text" placeholder="From">
+                            <input type="text" placeholder="To">
+                        </div>
+                        <div class="date">
+                            <input type="date" class="date-picker">
+                        </div>
+
+                        <div class="seats">
+                            <p><b>Choose Coach and Seat</b></p>
+                            <select id="coach-select">
+                                <option value="A1">A1</option>
+                                <option value="A2">A2</option>
+                                <option value="A3">A3</option>
+                                <option value="A1">A4</option>
+                                <option value="A2">A5</option>
+                                <option value="A3">A6</option>
+                                <option value="A1">A7</option>
+                                <option value="A2">A8</option>
+                                <option value="A3">A9</option>
+                                <option value="A1">A10</option>
+                                <option value="A2">A11</option>
+                                <option value="A3">A12</option>
+                                <!-- Add other coaches as needed -->
+                            </select>
+                            
+                            <input type="text" placeholder="Seat Number" id="seat-input" readonly>
+                        </div>
+                        <p><b>Additional Details</b></p>
+                        <div class="additional-details">
+                            <input type="email" placeholder="Email Address">
+                            <input type="tel" placeholder="Phone Number">
+                        </div>
+                    </div>
+
+                    <div class="booking-right">
+                        <p><b>Passenger Details</b></p>
+                        <div class="passenger-details">
+                            <input type="text" placeholder="Full Name">
+                            <input type="number" placeholder="Age">
+                            <input type="text" placeholder="ID Number">
+                        </div>
+                        <p><b>Payment Method</b></p>
+                        <div class="payment-method">
+                            <select>
+                                <option value="credit-card">Credit Card</option>
+                                <option value="debit-card">Debit Card</option>
+                                <option value="net-banking">Net Banking</option>
+                                <option value="upi">UPI</option>
+                            </select>
+                        </div>
+                        <p><b>Preferences</b></p>
+                        <div class="preferences">
+                            <label><input type="checkbox"> Include Insurance</label>
+                            <label><input type="checkbox"> Meal Preference</label>
+                        </div>
+                        <div class="book">
+                            <button>Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ----------------------- Cancel Tickets Section----------------------- -->
+            <div class="cancel-tickets section">
+                <h1>Cancel Tickets</h1>
+                <div class="cancel-box">
+                    <p><b>Cancellation Details</b></p>
+                    <input type="text" placeholder="PNR Number">
+                    <input type="text" placeholder="Ticket Number">
+                    <input type="text" placeholder="Registered Email Address">
+            
+                    <p><b>Additional Information</b></p>
+                    <input type="text" placeholder="Passenger Name">
+                    <input type="tel" placeholder="Phone Number">
+                    <textarea placeholder="Reason for Cancellation"></textarea>
+                    <div class="cancel-button">
+                        <button>Cancel Ticket</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Seat Chart Modal -->
+        <div class="modal" id="seat-modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Select Your Seat</h2>
+                <div class="seat-chart">
+                    <!-- Example seat chart layout -->
+                    <div class="seat-row">
+                        <button class="seat">1</button>
+                        <button class="seat">2</button>
+                        <button class="seat">3</button>
+                    </div>
+                    <div class="seat-row">
+                        <button class="seat">4</button>
+                        <button class="seat">5</button>
+                        <button class="seat">6</button>
+                    </div>
+                    
+                    <div class="seat-row">
+                        <button class="seat">7</button>
+                        <button class="seat">8</button>
+                        <button class="seat">9</button>
+                    </div>
+                    <div class="seat-row">
+                        <button class="seat">10</button>
+                        <button class="seat">11</button>
+                        <button class="seat">12</button>
+                    </div>
+
+                    <div class="seat-row">
+                        <button class="seat">13</button>
+                        <button class="seat">14</button>
+                        <button class="seat">15</button>
+                    </div>
+                    <div class="seat-row">
+                        <button class="seat">16</button>
+                        <button class="seat">17</button>
+                        <button class="seat">18</button>
+                    </div>
+
+                    <div class="seat-row">
+                        <button class="seat">19</button>
+                        <button class="seat">20</button>
+                        <button class="seat">21</button>
+                    </div>
+                    <div class="seat-row">
+                        <button class="seat">22</button>
+                        <button class="seat">23</button>
+                        <button class="seat">24</button>
+                    </div>
+
+                    <div class="seat-row">
+                        <button class="seat">25</button>
+                        <button class="seat">26</button>
+                        <button class="seat">27</button>
+                    </div>
+                    <div class="seat-row">
+                        <button class="seat">28</button>
+                        <button class="seat">29</button>
+                        <button class="seat">30</button>
+                    </div>
+
+                    <div class="seat-row">
+                        <button class="seat">31</button>
+                        <button class="seat">32</button>
+                        <button class="seat">33</button>
+                    </div>
+                    <div class="seat-row">
+                        <button class="seat">34</button>
+                        <button class="seat">35</button>
+                        <button class="seat">36</button>
+                    </div>
+
+                    <!-- Add more seat rows as needed -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="book_tickets.js"></script>
+</body>
+</html>

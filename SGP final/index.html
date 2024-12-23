@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RailEase</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="main">
+        <!-- -----------------------NAVBAR----------------------- -->
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo_final.png" alt="Logo">
+            </div>
+
+            <div class="mainlist">
+                <ul>
+                    <li><a href="index.html" class="list"><b>Home</a></b></li>
+                    <li><a href="#" class="list"><b>Book Tickets</b> <i class="fas fa-caret-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="search_trains.html">Search trains</a></li>
+                            <li><a href="book_tickets.html">Book tickets</a></li>
+                            <li><a href="#">View schedules</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="list"><b>About Us</b>
+                            <i class="fas fa-caret-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="company_info.html">Company information</a></li>
+                            <li><a href="contact_us.html">Help</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="list"><b>Other Services</b>
+                            <i class="fas fa-caret-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="https://www.swiggy.com/">Order food</a></li>
+                            <li><a href="https://www.amazon.com/">Shopping</a></li>
+                            <li><a href="https://www.netflix.com/">Entertainment</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="login-signup">
+                <button class="btn" id="login-btn"><a href="login-page.html">Login</a></button>
+                <button class="btn" id="signup-btn"><a href="signup-page.html">Sign Up</a></button>
+            </div>
+
+        </nav>
+
+        <!-- -----------------------HOME-PAGE----------------------- -->
+        <div class="home-page">
+
+            <div class="box box1">
+                <div class="welcome"> WELCOME TO </div>
+                <div class="main_name">RailEase</div>
+                <br>
+                <div class="text_simple">
+                    Modernizing your train travel experience
+                </div>
+            </div>
+
+            <div class="box box2">
+                <p id="Travelling_Route"><b>Travelling Route</b></p>
+                <div class="from_to">
+                    <input type="text" placeholder="From">
+
+                    <input type="text" placeholder="To">
+                </div>
+
+                <p id="Travelling_Date"><b>Travelling Date</b></p>
+                <div class="date">
+                    <input type="text" placeholder="DD\MM\YY">
+                </div>
+
+
+                <p id="Travelling_Persons"><b>Travelling Persons</b></p>
+                <div class="persons">
+                    <input type="text" placeholder="Adult">
+                    <input type="text" placeholder="Kids">
+                </div>
+
+                <div class="search">
+                    <button>Search</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+   <!-- -----------------------SLIDER----------------------- -->
+  
+   <div class="slider">
+    <div class="slide-track">
+     
+      <div class="slide">
+        <img src="secure.avif" alt="">
+        <div class="content">
+          <h3>Secure Payment</h3>
+          <p>Pay securely with multiple options</p>
+        </div>
+      </div>
+  
+      <div class="slide">
+        <img src="morden experience.jpg" alt="">
+        <div class="content">
+          <h3>Modern Experience</h3>
+          <p>Experience the best in class services</p>
+        </div>
+      </div>
+  
+      <div class="slide">
+        <img src="wifi.jpg" alt="">
+        <div class="content">
+          <h3>Free Wi-Fi</h3>
+          <p>Stay connected during your journey</p>
+        </div>
+      </div>
+  
+      <div class="slide">
+        <img src="packing tips.jpg" alt="">
+        <div class="content">
+          <h3>Packing Tips</h3>
+          <p>Learn how to pack for long trips</p>
+        </div>
+      </div>
+  
+      <div class="slide">
+        <img src="root-planner.jpg" alt="">
+        <div class="content">
+          <h3>Route Planner</h3>
+          <p>Plan your journey with ease</p>
+        </div>
+      </div>
+  
+      <div class="slide">
+        <img src="order food.jpeg" alt="">
+        <div class="content">
+          <h3>Order Food</h3>
+          <p>Get meals delivered to your seat</p>
+        </div>
+      </div>
+  
+      <div class="slide">
+        <img src="user-generated-content.jpg" alt="">
+        <div class="content">
+          <h3>User Reviews</h3>
+          <p>Share your travel experience</p>
+        </div>
+      </div>
+  
+      <div class="slide">
+        <img src="seat selection.png" alt="">
+        <div class="content">
+          <h3>Seat Selection</h3>
+          <p>Choose your preferred seats</p>
+        </div>
+      </div>
+  
+      <div class="slide">
+        <img src="full entertainment.jpg" alt="">
+        <div class="content">
+          <h3>Full Entertainment</h3>
+          <p>Enjoy onboard movies and shows</p>
+        </div>
+      </div>
+
+      
+    </div>
+  </div>
+  
+    <!-- -----------------------FOOTER----------------------- -->
+    <footer class="social-footer">
+        <div class="container">
+          <p>Get Connected with us on social networks</p>
+          <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-telegram-plane"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-pinterest-p"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-tumblr"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-snapchat-ghost"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </footer>
+               
+
+      <footer class="main-footer">
+        <div class="footer-content">
+          <div class="footer-columns">
+            <div class="column">
+              <p>RailEase Trains</p>
+              <p>General Information</p>
+              <p>Important Information</p>
+              <p>Agents</p>
+              <p>Enquiries</p>
+            </div>
+            <div class="column">
+              <p>How To</p>
+              <p>RailEase Official App</p>
+              <p>Advertise with us</p>
+              <p>Refund Rules</p>
+              <p>Person With Disability Facilities</p>
+            </div>
+            <div class="column">
+              <p>RailEase eWallet</p>
+              <p>RailEase Loyalty Program</p>
+              <p>RailEase-iPAY Payment Gateway</p>
+              <p>RailEase Zone</p>
+              <p>DMRC Ticket Booking at RailEase</p>
+            </div>
+            <div class="column">
+              <p>For Newly Migrated Agents</p>
+              <p>Mobile Zone</p>
+              <p>Policies</p>
+              <p>Ask Disha ChatBot</p>
+              <p>About us</p>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="security-logos">
+              <img src="icons8-google-pay-48.png" alt="Google-pay">
+              <img src="icons8-mastercard-48.png" alt="MasterCard">
+              <img src="icons8-rupay-48.png" alt="Rupay">
+              <img src="icons8-visa-48.png" alt="Visa">
+            </div>
+            <p>Copyright © 2024 - www.irctc.co.in. All Rights Reserved</p>
+            <p>Designed and Hosted by <a href="#">CRIS</a></p>
+            <p><a href="#">Compatible Browsers</a></p>
+          </div>
+        </div>
+      </footer>
+      
+        
+
+</body>
+
+
+<!-- -----------------------ICON INSTALLATION ----------------------- -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</html>

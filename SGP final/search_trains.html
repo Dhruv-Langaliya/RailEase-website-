@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Trains - RailEase</title>
+    <link rel="stylesheet" href="search_trains.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="main">
+        <!-- -----------------------NAVBAR----------------------- -->
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo_final.png" alt="Logo">
+            </div>
+            <div class="mainlist">
+                <ul>
+                    <li><a href="index.html" class="list"><b>Home</b></a></li>
+                    <li><a href="#" class="list"><b>Book Tickets</b> <i class="fas fa-caret-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="search_trains.html">Search trains</a></li>
+                            <li><a href="book_tickets.html">Book tickets</a></li>
+                            <li><a href="#">View schedules</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="list"><b>About Us</b> <i class="fas fa-caret-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="https://site16144777.nicepage.io/">Company information</a></li>
+                            <li><a href="https://site21460775.nicepage.io/">Help</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="list"><b>Other Services</b> <i class="fas fa-caret-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="https://www.swiggy.com/">Order food</a></li>
+                            <li><a href="https://www.amazon.com/">Shopping</a></li>
+                            <li><a href="https://www.netflix.com/">Entertainment</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="login-signup">
+                <button class="btn" id="login-btn"><a href="login-page.html">Login</a></button>
+                <button class="btn" id="signup-btn"><a href="signup-page.html">Sign Up</a></button>
+            </div>
+        </nav>
+
+        <!-- -----------------------CONTENT SECTIONS----------------------- -->
+        <div class="content-wrapper">
+            <!-- ----------------------- Search Trains Section----------------------- -->
+            <div class="main-search">
+                <div class="content">
+                    <h2 class="parant">Hello!!</h2>
+                    <p class="sub">What you like to search today ??</p>
+                    <p class="sub">we hope that you are enjoying your experince.</p>
+                    <p class="sub">Happy and safe journy.</p>
+
+                </div>
+
+                <div class="search-page section">
+                    <h1>Search Trains</h1>
+                    <div class="search-box">
+                        <p><b>Travelling Route</b></p>
+                        <div class="from_to">
+                            <input type="text" placeholder="From">
+                            <input type="text" placeholder="To">
+                        </div>
+                        <p><b>Travelling Date</b></p>
+                        <div class="date">
+                            <input type="date" class="date-picker" id="date-picker">
+                            <label for="date-picker">
+                                <i class="fa fa-calendar calendar-icon"></i>
+                            </label>
+                        </div>
+
+                        <p><b>Travelling Persons</b></p>
+                        <div class="persons">
+                            <input type="number" placeholder="Adults">
+                            <input type="number" placeholder="Kids">
+                        </div>
+                        <p><b>Class</b></p>
+                        <div class="class">
+                            <select>
+                                <option value="economy">Economy</option>
+                                <option value="business">Business</option>
+                                <option value="first-class">First Class</option>
+                            </select>
+                        </div>
+                        <div class="search">
+                            <button>Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- -----------------------Popular Trains Section----------------------- -->
+            <div class="section popular-trains">
+                <h2>Popular Trains</h2>
+                <div class="grid-4x2">
+                    <div class="card">Rajdhani Express<br>Speed: 120 km/h<br>Route: Delhi - Mumbai</div>
+                    <div class="card">Shatabdi Express<br>Speed: 150 km/h<br>Route: Delhi - Amritsar</div>
+                    <div class="card">Duronto Express<br>Speed: 140 km/h<br>Route: Mumbai - Kolkata</div>
+                    <div class="card">Gatiman Express<br>Speed: 160 km/h<br>Route: Delhi - Jhansi</div>
+                    <div class="card">Tejas Express<br>Speed: 130 km/h<br>Route: Mumbai - Goa</div>
+                    <div class="card">Garib Rath<br>Speed: 100 km/h<br>Route: Chennai - Bangalore</div>
+                    <div class="card">Humsafar Express<br>Speed: 110 km/h<br>Route: Patna - Mumbai</div>
+                    <div class="card">Antyodaya Express<br>Speed: 100 km/h<br>Route: Kolkata - Chennai</div>
+                </div>
+            </div>
+
+            <!-- -----------------------Train Classes Section ------------------------->
+            <div class="section train-classes">
+                <h2>Train Classes</h2>
+                <div class="grid-3x1">
+                    <div class="card">Economy Class<br>Affordable seating with basic amenities.</div>
+                    <div class="card">Business Class<br>Spacious seating with meal service and WiFi.</div>
+                    <div class="card">First Class<br>Luxurious seating with premium services.</div>
+                </div>
+            </div>
+
+            <!-- -----------------------Customer Reviews Section----------------------- -->
+            <div class="section customer-reviews">
+                <h2>Customer Reviews</h2>
+                <div class="grid-4x2">
+                    <div class="card">"Amazing service and comfortable journey!"<br>– Anil K.</div>
+                    <div class="card">"Affordable prices with good amenities."<br>– Sneha P.</div>
+                    <div class="card">"Loved the punctuality and cleanliness."<br>– Ravi T.</div>
+                    <div class="card">"Would highly recommend Tejas Express."<br>– Pooja S.</div>
+                    <div class="card">"Excellent experience with Rajdhani Express."<br>– Karan M.</div>
+                    <div class="card">"Traveling was smooth and enjoyable!"<br>– Nisha G.</div>
+                    <div class="card">"Impressed by the quality of service."<br>– Sunil D.</div>
+                    <div class="card">"A very comfortable and clean journey."<br>– Anisha R.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
